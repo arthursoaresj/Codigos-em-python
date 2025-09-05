@@ -14,7 +14,7 @@ if jogar == 'S' or jogar == 'SIM':
         if resposta == num:
             print ('Parabéns! você acertou!')
         else:
-            print('Você errou, eu pensei no número {}'.format(num))
+            print(f'Você errou, eu pensei no número {num}')
         resp=input('Deseja jogar novamente?[S/N] ').strip().upper()[0]
         if resp == 'N':
             print('Tudo bem!')
