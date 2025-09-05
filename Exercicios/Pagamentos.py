@@ -9,12 +9,12 @@ print ([ 3 ],'2x no cartão')
 print ([ 4 ],'3x ou mais no cartão')
 resp=input('Qual a forma de pagamento? ')
 if resp == '1':
-    print ('R${} à vista no dinheiro, o valor final será de R${:.2f} devido ao desconto de 10%'.format(valor,valor-(valor*0.10)))
+    print (f'R${valor} à vista no dinheiro, o valor final será de R${valor-(valor*0.10):.2f} devido ao desconto de 10%')
 elif resp == '2':
-    print ('R${} à vista no cartão, o valor final será de R${:.2f} devido ao desconto de 5%'.format(valor,valor-(valor*0.05)))
+    print (f'R${valor} à vista no cartão, o valor final será de R${valor-(valor*0.05):.2f} devido ao desconto de 5%')
 elif resp == '3':
-    print('Compra de R${} parcelada em 2x sem juros\nFicara R${:.2f} por mês'.format(valor,valor/2))
+    print(f'Compra de R${valor} parcelada em 2x sem juros\nFicara R${valor/2:.2f} por mês')
 elif resp == '4':
     parcelas=int(input('Quantas parcelas? '))
-    print ('Sua compra será parcelada em {} vezes de R${:.2f} com juros de 20%'.format(parcelas,(valor+(valor*0.20))/parcelas))
-    print('Sua compra de R${} vai custar R${:.2f} por mês'.format(valor,(valor+(valor*0.20))))
+    print (f'Sua compra será parcelada em {parcelas} vezes de R${(valor + (valor * 0.20)) / parcelas:.2f} com juros de 20%')
+    print(f'Sua compra de R${valor} vai custar R${valor+(valor*0.20):.2f} ao todo')
