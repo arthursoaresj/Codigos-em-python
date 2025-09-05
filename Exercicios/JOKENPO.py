@@ -7,7 +7,7 @@ print ('=-'*20)
 print ('               JOKENPO')
 print ('=-'*20)
 nome=str(input('Qual o seu nome? ')).title().strip()
-resp=str(input('Bem vindo, {}\nDeseja jogar Jokenpo?[S/N] '.format(nome))).strip().upper()[0]
+resp=str(input(f'Bem vindo, {nome}\nDeseja jogar Jokenpo?[S/N] ')).strip().upper()[0]
 if resp == 'S':
     while denovo != 'N':
 
@@ -22,14 +22,14 @@ if resp == 'S':
         sleep(1)
         print('PO!!!')
         print ('=-'*11)
-        print ('Computador jogou \033[4m{}\033[m'.format(itens[computador]))
-        print ('{} jogou \033[4m{}\033[m'.format(nome,itens[jogador]))
+        print (f'Computador jogou \033[4m{itens[computador]}\033[m')
+        print (f'{nome} jogou \033[4m{itens[jogador]}\033[m')
         print ('=-'*11)
         if computador == 0: #COMPUTADOR JOGOU PEDRA
             if jogador == 0:
                 print ('EMPATE')
             elif jogador == 1:
-                print ('{} VENCEU'.format(nome).upper())
+                print (f'{nome.upper()} VENCEU')
             elif jogador == 2:
                 print ('COMPUTADOR VENCEU')
             else:
@@ -41,13 +41,13 @@ if resp == 'S':
             elif jogador == 1:
                 print ('EMPATE')
             elif jogador == 2:
-                print ('{} VENCEU'.format(nome).upper())
+                print (f'{nome.upper()} VENCEU')
             else:
                 print('Jogada inválida')
 
         if computador == 2: #COMPUTADOR JOGOU TESOURA
             if jogador == 0:
-                print ('{} VENCEU'.format(nome).upper())
+                print (f'{nome.upper()} VENCEU')
             elif jogador == 1:
                 print ('COMPUTADOR VENCEU!')
             elif jogador == 2:
