@@ -1,1 +1,1 @@
-Apenas alguns exercicios que eu criei para melhorar minhas abilidades em python
+Apenas alguns exercicios que eu criei para melhorar minhas habilidades em python
